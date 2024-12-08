@@ -52,16 +52,16 @@ function puzzleTwo(): void {
     report.split(" ").map((v) => +v)
   );
 
-  let safeReportsQnt = 0;
+  let safeReportsQty = 0;
   const unsafeReports: number[][] = [];
 
   for (let levels of reportsAndLeves) {
     const isSafe = checkIsReportSafe(levels);
     if (!isSafe) unsafeReports.push(levels);
-    else safeReportsQnt++;
+    else safeReportsQty++;
   }
 
-  console.log("First Answer:", safeReportsQnt);
+  console.log("First Answer:", safeReportsQty);
 
   let safeReportsAfterSingleLevelCheck = 0;
 
@@ -72,7 +72,7 @@ function puzzleTwo(): void {
 
   console.log(
     "Second answer:",
-    safeReportsAfterSingleLevelCheck + safeReportsQnt
+    safeReportsAfterSingleLevelCheck + safeReportsQty
   );
 }
 
