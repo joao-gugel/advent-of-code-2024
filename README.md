@@ -1,4 +1,4 @@
-# aoc
+# advent of code 2024
 
 To install dependencies:
 
